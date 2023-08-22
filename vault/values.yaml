@@ -1,6 +1,7 @@
 app:
   name: vault
   image: vault
+  tag: 1.13.3
   container:
     port: 8200
   nodePort: 32004
