@@ -15,5 +15,12 @@ spec:
       containers:
         - name: {{ .Values.app.name}}
           image: {{ .Values.app.image}}
+          resources:
+            limits:
+              memory: {{ .Values.app.resources.limits.memory}}
+              cpu: {{ .Values.app.resources.limits.cpu}}
+            requests:
+              memory: {{ .Values.app.resources.requests.memory}}
+              cpu: {{ .Values.app.resources.requests.cpu}}
           ports:
             - containerPort: 8200
