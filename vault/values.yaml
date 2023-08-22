@@ -3,7 +3,7 @@ app:
   image: vault
   container:
     port: 8200
-  nodePort: 92004
+  nodePort: 32004
   namespace: vault
   resources:
     limits:
